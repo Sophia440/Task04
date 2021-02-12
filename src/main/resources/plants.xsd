@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="https://plants.com"
+        xmlns:tns="https://plants.com"
+        elementFormDefault="qualified">
+
+    <element name="plants">
+        <complexType>
+            <choice minOccurs="0" maxOccurs="unbounded">
+                <element name="tree" type="tns:tree"/>
+                <element name="flower" type="tns:flower"/>
+            </choice>
+        </complexType>
+    </element>
+
+    <complexType name="tree">
+        <complexContent>
+            <extension base="tns:plant">
+                <sequence>
+                    <element name="leaf-color" type="string"/>
+                    <element name="average-height-meters" type="double"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="flower">
+        <complexContent>
+            <extension base="tns:plant">
+                <sequence>
+                    <element name="petal-color" type="string"/>
+                    <element name="average-height-centimeters" type="double"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="plant">
+        <sequence>
+            <element name="name" type="string"/>
+            <element name="origin" type="string"/>
+            <element name="soil-type">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="Clay"/>
+                        <enumeration value="Sand"/>
+                        <enumeration value="Silt"/>
+                        <enumeration value="Loams"/>
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="growing-temperature-celsius" type="double"/>
+        </sequence>
+        <attribute name="id" use="required">
+            <simpleType>
+                <restriction base="ID">
+                    <pattern value="ID-[1-9][0-9]{0,5}"/>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+
+</schema>

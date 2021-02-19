@@ -10,22 +10,6 @@
         <leaf-color>Red</leaf-color>
         <average-height-meters>30.0</average-height-meters>
     </tree>
-    <tree id="ID2">
-        <name>Weeping Willow</name>
-        <origin>China</origin>
-        <soil-type>Silt</soil-type>
-        <growing-temperature-celsius>30.0</growing-temperature-celsius>
-        <leaf-color>Green</leaf-color>
-        <average-height-meters>10.5</average-height-meters>
-    </tree>
-    <flower id="ID3">
-        <name>Tulip</name>
-        <origin>Central Asia</origin>
-        <soil-type>Sand</soil-type>
-        <growing-temperature-celsius>9.8</growing-temperature-celsius>
-        <petal-color>Assorted</petal-color>
-        <average-height-centimeters>35.0</average-height-centimeters>
-    </flower>
     <flower id="ID4">
         <name>Chamomile</name>
         <origin>Germany</origin>

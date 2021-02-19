@@ -54,7 +54,7 @@
         <attribute name="id" use="required">
             <simpleType>
                 <restriction base="ID">
-                    <pattern value="ID-[1-9][0-9]{0,5}"/>
+                    <pattern value="ID\d+"/>
                 </restriction>
             </simpleType>
         </attribute>

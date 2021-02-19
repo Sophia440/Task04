@@ -1,4 +1,4 @@
-package com.epam.task04.parser;
+package com.epam.task04;
 
 import com.epam.task04.entity.Flower;
 import com.epam.task04.entity.Plant;
@@ -8,7 +8,7 @@ import com.epam.task04.enums.SoilType;
 import java.util.Arrays;
 import java.util.List;
 
-public interface PlantParserTest {
+public interface Constants {
     String VALID_XML_FILE = "./src/test/resources/test_plants.xml";
     String INVALID_TREE_ID = "ID2";
     String TREE_ID = "ID1";

@@ -1,5 +1,6 @@
 package com.epam.task04.parser;
 
+import com.epam.task04.Constants;
 import com.epam.task04.entity.Flower;
 import com.epam.task04.entity.Plant;
 import com.epam.task04.entity.Tree;
@@ -9,7 +10,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-public class JaxbPlantParserTest implements PlantParserTest {
+public class JaxbPlantParserTest implements Constants {
     private final JaxbPlantParser parser = new JaxbPlantParser();
 
     @Test

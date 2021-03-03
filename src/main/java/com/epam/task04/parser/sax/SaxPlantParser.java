@@ -28,7 +28,6 @@ public class SaxPlantParser implements PlantParser {
             SAXParser parser = saxParserFactory.newSAXParser();
             parser.parse(xmlFile, xmlHandler);
         } catch (IOException | SAXException | ParserConfigurationException e) {
-            LOGGER.error(e.getMessage(), e);
             throw new ParserException(e.getMessage(), e);
         }
         LOGGER.info(LOG_END_MESSAGE);

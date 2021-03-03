@@ -31,7 +31,6 @@ public class XmlValidator {
         try {
             schema = schemaFactory.newSchema(schemaLocation);
         } catch (SAXException e) {
-            LOGGER.error(e.getMessage(), e);
             throw new ParserException(e.getMessage(), e);
         }
         Validator validator = schema.newValidator();
@@ -41,7 +40,6 @@ public class XmlValidator {
             LOGGER.info(LOG_END_MESSAGE);
             return true;
         } catch (SAXException | IOException e) {
-            LOGGER.error(e.getMessage(), e);
             throw new ParserException(e.getMessage(), e);
         }
     }

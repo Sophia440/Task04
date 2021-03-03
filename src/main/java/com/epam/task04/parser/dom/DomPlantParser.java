@@ -51,7 +51,6 @@ public class DomPlantParser implements PlantParser {
                 plantList.add(plant);
             }
         } catch (IOException | SAXException e) {
-            LOGGER.error(e.getMessage(), e);
             throw new ParserException(e.getMessage(), e);
         }
         LOGGER.info(LOG_END_MESSAGE);
@@ -80,7 +79,6 @@ public class DomPlantParser implements PlantParser {
             plant.setGrowingTemperatureCelsius(plantGrowingTemperatureCelsius);
             plant.setSoilType(plantSoilType);
         } else {
-            LOGGER.error(UNKNOWN_PLANT_TAG_EXCEPTION_MESSAGE);
             throw new ParserException(UNKNOWN_PLANT_TAG_EXCEPTION_MESSAGE);
         }
         return plant;

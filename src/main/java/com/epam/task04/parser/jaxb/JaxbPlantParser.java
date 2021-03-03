@@ -31,7 +31,6 @@ public class JaxbPlantParser implements PlantParser {
             Plants plants = (Plants) unmarshaller.unmarshal(fileReader);
             plantList = plants.getPlants();
         } catch (JAXBException | FileNotFoundException e) {
-            LOGGER.error(e.getMessage(), e);
             throw new ParserException(e.getMessage(), e);
         } finally {
             if (fileReader != null) {

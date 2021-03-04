@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="https://plants.com/ plants.xsd"
+        xmlns="https://plants.com">
+    <tree id="ID1">
+        <name>Red Maple</name>
+        <origin>Asia</origin>
+        <soil-type>Sand</soil-type>
+        <growing-temperature-celsius>20.0</growing-temperature-celsius>
+        <leaf-color>Red</leaf-color>
+        <average-height-meters>30.0</average-height-meters>
+    </tree>
+    <flower id="ID4">
+        <name>Chamomile</name>
+        <origin>Germany</origin>
+        <soil-type>Clay</soil-type>
+        <growing-temperature-celsius>20.0</growing-temperature-celsius>
+        <petal-color>White</petal-color>
+        <average-height-centimeters>91.0</average-height-centimeters>
+    </flower>
+</plants>
